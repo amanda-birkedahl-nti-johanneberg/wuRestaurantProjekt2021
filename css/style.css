@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+}
+
+#huvud{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 90% 10%;    
+    grid-template-areas:
+    'a m'
+    'f f'
+    ;
+}
+
+h1{
+    padding-bottom: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+aside{
+    grid-area: a;
+    background-color: lightgreen;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px 10px 10px;
+
+}
+
+main{
+    grid-area: m;
+    background-color: lightseagreen;
+}
+
+footer{
+    grid-area: f;
+    background-color: lightsalmon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

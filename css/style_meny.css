@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+}
+
+#huvud{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;    
+    grid-template-areas:
+    'm'
+    ;
+}
+
+main{
+    grid-area: m;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(3, 1fr);    
+    grid-template-areas:
+    'd1 d2 d3'
+    'd4 d5 d6'
+    'd7 d8 d9'
+}
+
+.div1{
+    grid-area: d1;    
+    background-color: lightpink;
+}
+
+.div2{
+    grid-area: d2;
+    background-color: lightsalmon;
+}
+
+.div3{
+    grid-area: d3;
+    background-color: lightskyblue;
+}
+
+.div4{
+    grid-area: d4;
+    background-color: lime;
+}
+
+.div5{
+    grid-area: d5;
+    background-color: mediumpurple;
+}
+
+.div6{
+    grid-area: d6;
+    background-color: mediumvioletred;
+}
+
+.div7{
+    grid-area: d7;
+    background-color: orchid;
+}
+
+.div8{
+    grid-area: d8;
+    background-color: peru;
+}
+
+.div9{
+    grid-area: d9;
+    background-color: plum;
+}
+
