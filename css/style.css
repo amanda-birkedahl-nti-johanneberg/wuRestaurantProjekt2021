@@ -33,8 +33,10 @@ aside{
 
 main{
     grid-area: m;
-    background-color: lightseagreen;
+
 }
+
+
 
 footer{
     grid-area: f;
