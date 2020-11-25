@@ -1,155 +1,181 @@
-*{
-    margin: 0;
+* {
+  margin: 0;
 }
 
-#huvud{
-    display: grid;
-    height: 150vh;
-    width: 100vw;
-    max-width: 100%;
-    grid-template-columns: 100%;
-    grid-template-rows: 100%;    
-    grid-template-areas:
-    'm'
+#huvud {
+  display: grid;
+  height: 150vh;
+  width: 100vw;
+  max-width: 100%;
+  grid-template-columns: 100%;
+  grid-template-rows: 100%;
+  grid-template-areas: 
+  'm'
+  ;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 3;
+  top: 0px;
+  left: 0px;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  overflow-x: hidden;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  text-overflow: clip;
+  overflow: hidden;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+span {
+  font-size: 50px;
+  cursor: pointer;
+  position: fixed;
+  z-index: 2;
+  color: white;
+  top: 20px;
+  left: 25px;
+}
+
+main {
+  grid-area: m;
+  height: 150vh;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, calc(100% / 3));
+  grid-template-rows: repeat(3, calc(100% / 3));
+  grid-template-areas:
+    "d1 d2 d3"
+    "d4 d5 d6"
+    "d7 d8 d9"
     ;
 }
 
-.sidenav{
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 3;
-    top: 0px;
-    left: 0px;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-
-}
-  
-.sidenav a{
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-  
-.sidenav a:hover{
-    color: #f1f1f1;
-}
-  
-.sidenav .closebtn{
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-  
-span{
-    font-size:50px;
-    cursor:pointer;
-    position: fixed;
-    z-index: 2;
-    color: white;
-    top: 20px;
-    left: 25px;
+.div1 {
+  grid-area: d1;
 }
 
-main{
-    grid-area: m;
-    height: 150vh;
-    max-width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, calc(100%/3)); 
-    grid-template-rows: repeat(3,  calc(100%/3));    
-    grid-template-areas:
-    'd1 d2 d3'
-    'd4 d5 d6'
-    'd7 d8 d9'
-    ;
+.div2 {
+  grid-area: d2;
 }
 
-.div1{
-    grid-area: d1;
+.div3 {
+  grid-area: d3;
 }
 
-.div2{
-    grid-area: d2;
+.div4 {
+  grid-area: d4;
 }
 
-.div3{
-    grid-area: d3;
+.div5 {
+  grid-area: d5;
 }
 
-.div4{
-    grid-area: d4;
+.div6 {
+  grid-area: d6;
 }
 
-.div5{
-    grid-area: d5;
+.div7 {
+  grid-area: d7;
 }
 
-.div6{
-    grid-area: d6;
+.div8 {
+  grid-area: d8;
 }
 
-.div7{
-    grid-area: d7;
+.div9 {
+  grid-area: d9;
 }
 
-.div8{
-    grid-area: d8;
+.div1,
+.div2,
+.div3,
+.div4,
+.div5,
+.div6,
+.div7,
+.div8,
+.div9 {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: white;
 }
 
-.div9{
-    grid-area: d9;
+.div1::after,
+.div2::after,
+.div3::after,
+.div4::after,
+.div5::after,
+.div6::after,
+.div7::after,
+.div8::after,
+.div9::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
 }
 
-.div1, .div2, .div3, .div4, .div5, .div6, .div7, .div8, .div9{
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    position: relative;
-    color: white;
-}
-
-.div1::after, .div2::after, .div3::after, .div4::after, .div5::after, .div6::after, .div7::after, .div8::after, .div9::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.4);
-}
-
-.div1::after:hover, .div2::after:hover, .div3::after:hover, .div4::after:hover, .div5::after:hover, .div6::after:hover, .div7::after:hover, .div8::after:hover, .div9::after:hover{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.2);
+.div1::after:hover,
+.div2::after:hover,
+.div3::after:hover,
+.div4::after:hover,
+.div5::after:hover,
+.div6::after:hover,
+.div7::after:hover,
+.div8::after:hover,
+.div9::after:hover {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
 }
 
 div img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    align-self: center;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  align-self: center;
 }
 
-div h2{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    text-align: center;
-    color: white;
+div h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  color: white;
 }
