@@ -2,7 +2,7 @@
     margin: 0;
 }
 
-#huvud{
+#hem_sida{
     display: grid;
     height: 100vh;
     grid-template-columns: 15% 85%;
@@ -13,38 +13,39 @@
     ;
 }
 
-h1{
-    padding-bottom: 30px;
-}
-
-a{
-    text-decoration: none;
-    color: black;
-}
-
-aside{
+#aside_nav{
     grid-area: a;
     background-color: lightgreen;
     display: flex;
     flex-direction: column;
     padding: 10px 10px 10px 10px;
-
 }
 
-main{
+#aside_nav h1{
+    padding-bottom: 30px;
+}
+
+#aside_nav a{
+    text-decoration: none;
+    color: black;
+}
+
+#main_hem{
     grid-area: m;
 }
 
-img{
-        width: 100%;
-    height: 100%;
+#main_hem h3, #main_hem p{
+    padding: 5px 5px 5px 5px;
+}
+
+#main_hem img{
+    width: 100%;
+    height: 75%;
     object-fit: cover;
     align-self: center;
 }
 
-
-
-footer{
+#footer_hem{
     grid-area: f;
     background-color: lightsalmon;
     display: flex;

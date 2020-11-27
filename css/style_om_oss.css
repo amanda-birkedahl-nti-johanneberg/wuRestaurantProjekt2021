@@ -2,25 +2,23 @@
     margin: 0;
 }
 
-#huvud{
-    display: grid;
-    height: 100vh;
-    width: 100vw;
+#omoss_sida{
+    height: 200vh;
+    max-width: 100vw;
 }
 
-section{
+#section_omoss{
     display: grid;
-    height: 100vh;
-    width: 100vw;
+    height: 200vh;
+    max-width: 100vw;
     grid-template-areas: 
     'oo oo'
     'ma ma'
-    'hb lk'
+    'ma ma'
     'hb lk'
     ;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 25% 25% 25% 25%;
-
+    grid-template-rows: 25% 25% 15% 35%;
 }
 
 #omoss{

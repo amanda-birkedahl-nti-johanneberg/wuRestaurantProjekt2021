@@ -2,7 +2,7 @@
   margin: 0;
 }
 
-#huvud {
+#menysida{
   display: grid;
   height: 150vh;
   width: 100vw;
@@ -14,7 +14,7 @@
   ;
 }
 
-.sidenav {
+.sidenav{
   height: 100%;
   width: 0;
   position: fixed;
@@ -28,7 +28,7 @@
   overflow-x: hidden;
 }
 
-.sidenav a {
+.sidenav a{
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
@@ -37,13 +37,14 @@
   transition: 0.3s;
   text-overflow: clip;
   overflow: hidden;
+  white-space: nowrap;
 }
 
-.sidenav a:hover {
+.sidenav a:hover{
   color: #f1f1f1;
 }
 
-.sidenav .closebtn {
+.sidenav .closebtn{
   position: absolute;
   top: 0;
   right: 25px;
@@ -51,7 +52,7 @@
   margin-left: 50px;
 }
 
-span {
+span{
   font-size: 50px;
   cursor: pointer;
   position: fixed;
@@ -61,7 +62,7 @@ span {
   left: 25px;
 }
 
-main {
+#main_meny{
   grid-area: m;
   height: 150vh;
   max-width: 100%;
@@ -75,51 +76,43 @@ main {
     ;
 }
 
-.div1 {
+.section1{
   grid-area: d1;
 }
 
-.div2 {
+.section2{
   grid-area: d2;
 }
 
-.div3 {
+.section3{
   grid-area: d3;
 }
 
-.div4 {
+.section4{
   grid-area: d4;
 }
 
-.div5 {
+.section5{
   grid-area: d5;
 }
 
-.div6 {
+.section6{
   grid-area: d6;
 }
 
-.div7 {
+.section7{
   grid-area: d7;
 }
 
-.div8 {
+.section8{
   grid-area: d8;
 }
 
-.div9 {
+.section9{
   grid-area: d9;
 }
 
-.div1,
-.div2,
-.div3,
-.div4,
-.div5,
-.div6,
-.div7,
-.div8,
-.div9 {
+#main_meny section{
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -127,15 +120,7 @@ main {
   color: white;
 }
 
-.div1::after,
-.div2::after,
-.div3::after,
-.div4::after,
-.div5::after,
-.div6::after,
-.div7::after,
-.div8::after,
-.div9::after {
+#main_meny section::after{
   content: "";
   position: absolute;
   top: 0;
@@ -145,15 +130,7 @@ main {
   background: rgba(0, 0, 0, 0.4);
 }
 
-.div1::after:hover,
-.div2::after:hover,
-.div3::after:hover,
-.div4::after:hover,
-.div5::after:hover,
-.div6::after:hover,
-.div7::after:hover,
-.div8::after:hover,
-.div9::after:hover {
+#main_meny section::after:hover{
   content: "";
   position: absolute;
   top: 0;
@@ -163,14 +140,14 @@ main {
   background: rgba(0, 0, 0, 0.2);
 }
 
-div img {
+#main_meny section img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   align-self: center;
 }
 
-div h2 {
+#main_meny section h2 {
   position: absolute;
   top: 50%;
   left: 50%;
