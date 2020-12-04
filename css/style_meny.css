@@ -2,18 +2,6 @@
   margin: 0;
 }
 
-#menysida{
-  display: grid;
-  height: 150vh;
-  width: 100vw;
-  max-width: 100%;
-  grid-template-columns: 100%;
-  grid-template-rows: 100%;
-  grid-template-areas: 
-  'm'
-  ;
-}
-
 .sidenav{
   height: 100%;
   width: 0;
@@ -70,46 +58,46 @@ span{
   grid-template-columns: repeat(3, calc(100% / 3));
   grid-template-rows: repeat(3, calc(100% / 3));
   grid-template-areas:
-    "d1 d2 d3"
-    "d4 d5 d6"
-    "d7 d8 d9"
+    "s1 s2 s3"
+    "s4 s5 s6"
+    "s7 s8 s9"
     ;
 }
 
 .section1{
-  grid-area: d1;
+  grid-area: s1;
 }
 
 .section2{
-  grid-area: d2;
+  grid-area: s2;
 }
 
 .section3{
-  grid-area: d3;
+  grid-area: s3;
 }
 
 .section4{
-  grid-area: d4;
+  grid-area: s4;
 }
 
 .section5{
-  grid-area: d5;
+  grid-area: s5;
 }
 
 .section6{
-  grid-area: d6;
+  grid-area: s6;
 }
 
 .section7{
-  grid-area: d7;
+  grid-area: s7;
 }
 
 .section8{
-  grid-area: d8;
+  grid-area: s8;
 }
 
 .section9{
-  grid-area: d9;
+  grid-area: s9;
 }
 
 #main_meny section{
@@ -128,16 +116,17 @@ span{
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.4);
+  transition: all 0.2s ease;
 }
 
-#main_meny section::after:hover{
+#main_meny section:hover::after{
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.25);
 }
 
 #main_meny section img {
